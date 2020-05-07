@@ -7,11 +7,11 @@ $('.tooltip').css({
 });
 $('.tooltip').mouseenter(function () {
     const prompt = '<span class="tooltip-content">';
-    $(this).append(prompt + $(this).attr('data-tooltip'));
+    $(this).append(prompt + $(this).attr('data-prompts'));
     $(this).css('background', 'pink');
 });
 
 $('.tooltip').mouseleave(function () {
-    $(this).children('.tooltip-content').remove();
+    $(this).children('.tooltip-prompts').remove();
     $(this).css('background', 'white');
 });
