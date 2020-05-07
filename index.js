@@ -6,8 +6,8 @@ $('.tooltip').css({
     border: '1px double black',
 });
 $('.tooltip').mouseenter(function () {
-    const prompt = '<span class="tooltip-content">';
-    $(this).append(prompt + $(this).attr('data-prompts'));
+    const prompt = '<span class="tooltip-prompts">';
+    $(this).append(prompt + $(this).attr('data-tooltip'));
     $(this).css('background', 'pink');
 });
 
@@ -15,3 +15,4 @@ $('.tooltip').mouseleave(function () {
     $(this).children('.tooltip-prompts').remove();
     $(this).css('background', 'white');
 });
+
